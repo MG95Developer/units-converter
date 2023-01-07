@@ -10,7 +10,37 @@
 
     <body>
         
+        <h1>Convert Px to PT / PX to PT</h1>
 
+        <div class="container">
+       
+          <div class="converter-container">
+            <h3>Pixels (PX) to Points (PT)</h3>
+            <div id="convert-pt-to-px">
+              <label for="pixels">PIXELS (px) value:</label> <br>
+              <input type="number" id="pixels" name="pixels">
+              <br>
+              <button onclick="convertPixelsToPoints()">Convert PX to PT</button>
+              <button  id="reset-btn" type="submit" onClick="refreshPage()">RESET</button>
+            </div>
+          </div>
+    
+          <div class="converter-container" id="last">
+            <h3>Points (PT) to Pixels (PX)</h3>
+            <div id="convert-px-to-pt">
+              <label for="points">POINTS (pt) value:</label> <br>
+              <input type="number" id="points" name="points">
+              <br>
+              <button onclick="convertPointsToPixels()">Convert PT to PX</button>
+              <button  id="reset-btn" type="submit" onClick="refreshPage()">RESET</button>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div id="result">
+          <p>Result: <span id="dom-result"></span></p>
+        </div>
 
         <script src="./scripts.js"></script>
     </body>
