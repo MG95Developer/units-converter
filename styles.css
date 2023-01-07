@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: lightgray;
+  }
+  
+  .container{
+    padding: 3em; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div.converter-container{
+    border: 3px solid black;
+    padding: 1em; 
+    text-align: center;
+  }
+  
+  h1{
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  h3{
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  input{
+    margin-top: 1em;
+    padding: .5em;
+    width: 280px;
+    border: none;
+  }
+  
+  #last{
+    margin-top: 50px;
+  }
+  
+  #result{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  
+  button{
+    padding: 1em 1.5em;
+    margin-top: 20px;
+    background-color: orange;
+    font-size: 1rem;
+    color: black;
+    border: none;
+  }
+  
+  #result p {
+    font-size: 30px;
+  }
+  
+  #result p span{
+    color: green;
+    font-weight: bold;
+  }
+  
+  #reset{
+   text-align: center;
+  }
+  
+  #reset-btn{
+    background-color: transparent;
+    color: black;
+    font-weight:  bold;
+  }
+  
+  #reset-btn:hover{
+    background-color: red;
+    color: white;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (min-width: 1024px) {
+    #last{
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    div#convert-pt-to-px, 
+    div#convert-px-to-pt{
+      padding: 3em;
+      width: 400px;
+    }
+  
+    
+  }
